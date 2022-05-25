@@ -35,48 +35,51 @@
 						</section>
                         <section>
                             <div class="content">
-							<h3><b>Classes and Objects</b></h3>
-							<p>1) A class has a collection of instructions on how to build its objects and how they behave. An important part of every class is its constructor, which is a collection of attributes. Creating an object we provide their values unless they have a default value.</p>
+							<h3><b>Classes and Objects - Reflections</b></h3>
+							<p>Learning outcomes:</p>
+							<p>1) A class has a collection of instructions on how to build its objects and how they behave. One of the most important part of every class is its constructor, which is a collection of object attributes. Creating an object we provide the values of these variables, unless they have a default value.</p>
 							<img src="images2/Classes_and_Objects_1.jpg" width="350" height="200"><p></p>
-							<p>2) Practising object There is also the possibility to implement an attribute outside a constructor. And then they belong to the whole class. They are shared by all instances and any change applied to it causes the same change in all object of this class. Variables created inside a constructor belong to the object instance.</p>
-							<p>Reflections:<br>
-							In Tutorial Labs about Classes and Objects I had to create a Person class with four variables. These variables are public (can be accessible form outside the class) and the example of that (iterating a list of objects and printing their names) was shown on picture below.</p>
+							<p>2) There is also possibility to implement a variable outside a constructor. Variables outside a constructor belong to the class. They are shared by all instances and any change applied to this variable causes the same change in all object of this class. Variables created inside a constructor belong to the object instance.</p>
+							<img src="images2/Classes_and_Objects_1_1.jpg" width="350" height="200"><p></p>
+							<p>In Tutorial Labs about Classes and Objects I had to create a Person class with four variables. These variables are public (can be accessible form outside the class) and the example of that (iterating a list of objects and printing their names) was shown on Picture 1.</p>
                             <img src="images2/Classes_and_Objects_2.jpg" width="600" height="400">
 							<p></p>
-							<h3><b>Class Functions and Methods</b></h3>
+							<h3><b>Class Functions and Methods - Reflections</b></h3>
 							<p>Learning outcomes:<br>
-							1. Functions are not associated with any objects and can be invoke by their names. They are independent element of code. Methods, are associated with objects and they cannot be invoked only using their names. They are object dependent.</p>
-							<p>2. We can use decorators like @classmethod to make a class method, that changes the state of the whole class (not only one object). If a method uses only class variables then is should have this decorator. This method has &lsquo;cls&rsquo; as a parameter. It was used in challenge one about class functions and methods to print the actual value of &ldquo;count&rdquo;:</p>
+							1. Functions are not associated with any objects and can be invoke by their names. They are independent elements of code. Methods, however, are associated with objects and they cannot be invoked only using their names. They are object dependent elements of code.</p>
+							<p>2. I have learnt that we can use a decorator (@classmethod) to make a class method, that changes the state of the whole class (not only its one object). If a method uses only class variables (outside a constructor) then it should have this decorator. This method has ‘cls’ as a parameter. It was used in challenge 1 about class functions and methods to print the actual value of count variable:</p>
 							<img src="images2/Classes_and_Objects_3.jpg" width="900" height="750"><p></p>
-							<p>3. Static method (decorated with @staticmethod) is a general method that perform a task that is non-related to a class or an object and does not use &lsquo;self&rsquo; or &lsquo;cls&rsquo;. I have used it in my System Implementation assignment. This method performs a task that is not related to its class and class&rsquo; variables. </p>
+							<p>3. Static method (decorated with @staticmethod), however, is a general method that perform a task that is non-related to a class or an object. This method does not use ‘self’ or ‘cls’. I have used a static method in my System Implementation assignment. This method performs a task that is not related to its class and class’ attributes.</p>
 							<img src="images2/Classes_and_Objects_4.jpg" width="700" height="320"><p></p>
-							<h3><b>Inheritance</b></h3>
+							<h3><b>Inheritance - Reflections</b></h3>
 							<p>Reflection: <br>
-							In Codio exercises, I implemented Inheritance in practice. Person Class is a parent class for Adult Class. However, Adult Class is at the same time a parent class for Teacher. There is a chain relationship between these classes that make them similar but some changes and distinguishing elements were applied like adding one functionality in Adult Class and rewriting attributes in Teacher class.</p>
+							Inheritance is one of the most important and commonly used relationship in object oriented programming. This concept is useful if we find similarity between classes (about data they carry, behaviour they have and especially if they have both of these). It helps to improve code elegance and better performance (code reuse).
+							Based on information and knowledge I gained I could implement this approach in practice in Codio exercises. Considering one example: Person Class is a superclass for Adult Class. However, Adult Class is at the same time a superclass for Teacher. There is similarity between them but some changes and distinguishing elements were applied like adding one functionality in Adult Class  (calc_bmi() method) and rewriting attributes in Teacher class. </p>
 							<img src="images2/Classes_and_Objects_5.jpg" width="850" height="800"><p></p>
 							<p>Learning outcomes:<br>
-							1. A subclass is a class that inheritance from a superclass, a construct of variables and methods (&ldquo;Is-A&rdquo; relationship). Child classes can be considered as a more specialised type of Parent class.</p>
-							<p>2. Variables and methods can be overwritten in subclasses to introduce some changes, while still keeping essential similarities to the superclass. I applied this functionality in the exercise about Inheritance.</p>
-							<p>3. A concept of multiple inheritances, in which a subclass inheritance forms more than one superclass. This approach is not present in some programming languages (like Java, C# or Kotlin).</p>
-							<h3><b>Encapsulation</b></h3>
-							Reflections:<br>
-							Encapsulation gives us a chance to hide variables and methods in classes, in a way that they are not accessible from outside of the class. In Some situations, it is necessary, because they may carry important data that must not be overwritten, changed, or manipulated (for example account balance in a bank). My own example of this approach is shown below (in Java):<p></p>
+							1. A subclass is a class that inheritance from a superclass, a construct with attributes as well as methods. Subclasses can be considered as a more specialize types of their Superclass.</p>
+							<p>2. Attributes and methods can be overwritten in subclasses to introduce some changes, but still keeping essential similarities to the superclass. I applied this functionalities in the exercise about Inheritance.</p>
+							<p>3. There is also a concept of multiple inheritance, in which a subclass inheritance form more than one super class. This approach however is not present in some programming languages (like Java, C# or Kotlin).</p>
+							<h3><b>Encapsulation - Reflections</b></h3>
+							<p>Encapsulation is a fundamental concept of object oriented programming. OOP gives us a chance to hide variables and some functionality (methods) in classes, in a way that they are not accessible form outside of the class. Some attributes or methods sometimes cannot be invoke form outside of classes, because they may carry important data that must not be overwritten, changed, manipulated (for example bank’s account balance). My own example of this approach is shown below (in Java):</p>
 							<img src="images2/Classes_and_Objects_6.jpg" width="600" height="340">
 							<br>Learning outcomes:
-							<p>1. Encapsulation is used to hide data and functionality and prevent their changes or use outside classes.</p>
-							<p>2. Attributes can be defined as private, Python, however, is more flexible. there is a common practice that variables with one underscore are assumed as private (&#96;&#96;_var&#96;&#96;), with double underscore convention (&#96;&#96;__var&#96;&#96;) are not accessible directly.</p>
-							<p>3. Access to private variables can be given by getters and setters using property decorators or property functions.<br>
+							<p>1. Encapsulation is used to hide data and functionality and prevent their changes or use outside the class.</p>
+							<p>2. In many programming languages it is possible to define attributes as private (like in Java), Python however is more flexible. There is a common practise of treating variables with one underscore as private (_var). But also it is possible to use double underscore convention (__var) for better protraction. </p>
+							<p>3. It is possible to get an access to private attributes by getters and change their values by setters. Base on Codio exercises I learnt two ways of doing it: property decorators or property function.<br>
 							</p>
-							<h3><b>Polymorphism</b></h3>
-							<p>Reflections:<br>
-							In object-oriented programming, polymorphism means when different behaviour of a function or method is observed depending on which subclass is used for the task.</p>
+							<h3><b>Polymorphism - Reflections</b></h3>
+							<p>Polymorphism is a concept in which a function with its definition and logic may accept different types of variables and performing a specific job for a concrete type. The basic example describing this concept is provided below:</p>
+							<img src="images2/Classes_and_Objects_8.jpg" width="400" height="200">
+							<p>Function add_method can accept both integers as well as strings. In the first case there would be a mathematic operation (addition). In the second one concentrating a new, longer string.
+							In object oriented programming polymorphism is similar, methods have different behaviour that depends on which subclass is used for the task. During my studies I familiarize myself with: method overriding, overloading, operation overloading, magic method and duck typing.</p>
 							<p>Learning outcomes:<br>
-							1. Method overriding &ndash; a subclass overrides a method of the superclass and acts differently from the original.</p>
-							<p>2. Method Overloading &ndash; a set of classes have methods with the same name and other methods or a function can use their name and depending on what object is used, different outcomes may be given.</p>
-							<p>3. Operator Overloading &ndash; the same operator may give different results based on what type of variables is passed.</p>
-							<p>4. Magic Methods are a set of special built-in functions in Python to manipulate objects. I have implemented this type of polymorphism in my System Implementation assignment, where I wanted to compare two objects and check if they have the same values.</p>
+							1. Method overriding – a subclass overrides a method of superclass and acts differently form the original. <br>
+							2. Method Overloading – if a class have methods with the same name but taking different paramiters and giving different outcomes.<br>
+							3. Operator Overloading – in Python, the same operator may give different results based on what type of variables are passed. <br>
+							4. Magic Methods are a set of special built-in functions in Python to manipulate objects. I have implemented this type of polymorphism in my System Implementation assignment, where I wanted to compare two objects and check if they have the same values of attributes:</p>
 							<img src="images2/Classes_and_Objects_7.jpg" width="700" height="160"><p></p>
-							<p>5. Duck Typing – it does not matter what type of object is passing to a method or function, as long as it can properly perform its job.</p>
+							<p>5. Duck Typing – in this concept it does not matter what type of data iare passing to a method or function, as long as they can properly perform their job.</p>
 							</div>
 						</section>
 					</section>

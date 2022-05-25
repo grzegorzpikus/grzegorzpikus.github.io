@@ -36,29 +36,29 @@
                         <section>
 							<div class="content">
 							<h3>Mid-module assignment - self-evaluation</h3>
-							<p>In my mid-of module assignment I did my best to create a system design for self- service checkouts, however I made a few mistakes that makes my proposal inefficient. These gaps in my implementation are as follow:</p>
-							<p>1) I did not provide multiplicities for all relationships, basically between Staff Class (and its subclasses) with Product Class (and its subclasses).<br>
-							2) I have doubts if Staff should have subclasses. I reckon it was not necessary and I would remove Salesman subclass form my diagram.<br>
-							3) Moreover, I think I misunderstood the idea of staff and warehouse. These two classes should be separated, because they have different tasks in this system design. The thing I confused in my proposal was creating classes for different type of employees who work in the supermarket (Warehouse subclass). I should have focused on proper implementation of actions and data management rather than finding correlations between real employees and potential classes that would represent them.<br>
-							4) It was pointed me out that Order class is composed of two subclasses (Prodyct_by_item and Prodyct_by_weight) rather than of superclass Product. And this comment is justified, because it would simplify the diagram and it is rather obvious that if superclass Product is aggregated in Order then both of subclasses automatically have the same relationship. </p>
-							<p>I think I did a good job in creating proper methods that could be used to implement good software solution for making, editing and completing order with additional options like paying by different methods, collecting loyalty points or checking the age limit if prohibited products are purchased. Around Order Class I successfully described relationships and I applied encapsulation approach (with private and public variables) where it was necessary.</p>
+							<p>In my mid-of module assignment I did my best to create a system design for self-checkouts, however I made a few mistakes that makes my proposal inefficient. These gaps in my implementation are as follow:</p>
+							<p>1) I did not provide multiplicities for all relationships, basically between Staff and Product Classes.<br>
+							2) Staff should not have subclasses. I reckon it was not necessary and I would remove Salesman subclass.<br>
+							3) Moreover, I misunderstood the idea of staff and warehouse. These two classes should be separated, because they have different tasks in this system design. The thing I confused in my proposal was creating classes for different type of employees who work in the supermarket (Warehouse subclass). I should have focused on proper implementation of actions and data management rather than finding correlations between real employees and potential classes that would represent them.<br>
+							4) It was pointed me out that Order class is composed of two subclasses rather than of superclass Product. And this comment is justified, because it simplifies the code, and it is obvious if Parent class is associated to Order class, so do subclasses.</p>
+							<p>I think I did a good job in creating proper methods that could be used to implement good software solution for making, editing and completing order with additional options like paying by different methods, collecting loyalty points or checking the age limit if prohibited products are purchased. Around Order Class I successfully described relationships and I applied encapsulation approach (with private and public variables) where it was necessary. </p>
 							<p><img src="images2/Assignment1.jpg" width="900" height="600"></p>
 							<h3>System Implementation assignment</h3>
-							<p>I personally think that in my system implementation I successfully applied object oriented programming to create a working script for booking appointments for a local surgery. The main features that should be underline are as follow:</p>
-							a) I created all required classes with relationships that were shown on the class diagram.<br>
-							b) I used variety of OOP approaches like: Inheritance, Polymorphism (f.i. magic methods), variety of class methods (including static methods)<br>
+							<p>In my system implementation, I successfully applied object oriented programming to create a working script for booking appointments for a surgery. The main features are as follow:</p>
+							<p>a) I created all required classes with relationships that were shown on the class diagram.<br>
+							b) I used variety of OOP approaches like: Inheritance, Polymorphism (f.i. magic methods), variety of class methods (including static methods).<br>
 							c) I made testing script using built-in Python unittest library.<br>
 							d) I added some changes that I described in My README file about system design to be able among the others implement <i>find_next_available()</i> method.<br>
-							e) I did my best to use advised PEP8 style in my code.<br>
+							e) I used PEP8 style in my code.<br>
 							f) for simple actions like sorting I used a python built-in method. For complex task like in <i>find_next_available()</i> method, I create my own algorithm.</p>
-							<p>Improvements that might have been made:</p>
+							<p>Improvements that might have been made:<br>
 							a) I could have used Method Overwriting for the graphical representation of objects in HealthcareProfessional Class to simplify my code.<br>
-							b) Probably lack of experience may be seen in coding style. Many statements or logic in my code might have been written easier.<br>
-							c) Some changes that I have applied in the system design, made my code more complicated (like in <i>find_next_available()</i> method). However, I still believe that without this particular change, I could not provide a working method in this case. <br>
-							<p>Learning outcomes:</p>
-							1) Firstly, I discovered that the class diagram was very useful to create the script. I had guidelines that I follow and a bright vision how the system should work.<br>
-							2) I could experience in practice relationships between classes and how they look form inside of classes at the programming level.<br>
-							3) I could use variety of OOP features in practice.<br>
+							b) Lack of experience may be seen in coding style. Many statements or logic in my code might have been written easier.<br>
+							c) Some changes that I have applied in the system design, made my code more complicated (like in <i>find_next_available()</i> method). However, I still believe that without this particular change, I could not provide a working method in this case. </p>
+							<p>Learning outcomes:<br>
+							1) Class Diagram are very useful to create the script. I had guidelines that I follow and a bright vision how the system should work.<br>
+							2) I experienced in practice relationships between classes and how they look form inside of classes at the programming level.<br>
+							3) I used variety of OOP features in practice.<br>
 							4) For the first time, I could test my code by writing tests to follow any gaps and inconsistency in my code. </p>
 							</div>
 						</section>
