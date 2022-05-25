@@ -1,0 +1,127 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Grzegorz Pikus e-Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+					<section>
+						<p></p>
+						<ul class="actions">
+							<li><a href="UoE_OOP.html" class="button" type="reset">Object-Oriented Programming</a></li>
+						</ul>
+					</section>
+				<!-- One -->
+					<section id="one" class="wrapper style2 spotlights">
+						<section>
+							<a href="#" class="image"><img src="images/OOP.jpg" alt="" data-position="center center" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>Object-Oriented Programming</h2>
+									<p>My work through the module on Object-Oriented Programming.</p>
+<!--									<ul class="actions">-->
+<!--										<li><a href="TEST1.html" class="button" target="_blank">Learn more</a></li>-->
+<!--									</ul>-->
+								</div>
+							</div>
+						</section>
+                        <section>
+                            <div class="content">
+							<h3><b>Classes and Objects</b></h3>
+							<p>1) A class has a collection of instructions on how to build its objects and how they behave. An important part of every class is its constructor, which is a collection of attributes. Creating an object we provide their values unless they have a default value.</p>
+							<img src="images2/Classes_and_Objects_1.jpg" width="350" height="200"><p></p>
+							<p>2) Practising object There is also the possibility to implement an attribute outside a constructor. And then they belong to the whole class. They are shared by all instances and any change applied to it causes the same change in all object of this class. Variables created inside a constructor belong to the object instance.</p>
+							<p>Reflections:<br>
+							In Tutorial Labs about Classes and Objects I had to create a Person class with four variables. These variables are public (can be accessible form outside the class) and the example of that (iterating a list of objects and printing their names) was shown on picture below.</p>
+                            <img src="images2/Classes_and_Objects_2.jpg" width="600" height="400">
+							<p></p>
+							<h3><b>Class Functions and Methods</b></h3>
+							<p>Learning outcomes:<br>
+							1. Functions are not associated with any objects and can be invoke by their names. They are independent element of code. Methods, are associated with objects and they cannot be invoked only using their names. They are object dependent.</p>
+							<p>2. We can use decorators like @classmethod to make a class method, that changes the state of the whole class (not only one object). If a method uses only class variables then is should have this decorator. This method has &lsquo;cls&rsquo; as a parameter. It was used in challenge one about class functions and methods to print the actual value of &ldquo;count&rdquo;:</p>
+							<img src="images2/Classes_and_Objects_3.jpg" width="900" height="750"><p></p>
+							<p>3. Static method (decorated with @staticmethod) is a general method that perform a task that is non-related to a class or an object and does not use &lsquo;self&rsquo; or &lsquo;cls&rsquo;. I have used it in my System Implementation assignment. This method performs a task that is not related to its class and class&rsquo; variables. </p>
+							<img src="images2/Classes_and_Objects_4.jpg" width="700" height="320"><p></p>
+							<h3><b>Inheritance</b></h3>
+							<p>Reflection: <br>
+							In Codio exercises, I implemented Inheritance in practice. Person Class is a parent class for Adult Class. However, Adult Class is at the same time a parent class for Teacher. There is a chain relationship between these classes that make them similar but some changes and distinguishing elements were applied like adding one functionality in Adult Class and rewriting attributes in Teacher class.</p>
+							<img src="images2/Classes_and_Objects_5.jpg" width="850" height="800"><p></p>
+							<p>Learning outcomes:<br>
+							1. A subclass is a class that inheritance from a superclass, a construct of variables and methods (&ldquo;Is-A&rdquo; relationship). Child classes can be considered as a more specialised type of Parent class.</p>
+							<p>2. Variables and methods can be overwritten in subclasses to introduce some changes, while still keeping essential similarities to the superclass. I applied this functionality in the exercise about Inheritance.</p>
+							<p>3. A concept of multiple inheritances, in which a subclass inheritance forms more than one superclass. This approach is not present in some programming languages (like Java, C# or Kotlin).</p>
+							<h3><b>Encapsulation</b></h3>
+							Reflections:<br>
+							Encapsulation gives us a chance to hide variables and methods in classes, in a way that they are not accessible from outside of the class. In Some situations, it is necessary, because they may carry important data that must not be overwritten, changed, or manipulated (for example account balance in a bank). My own example of this approach is shown below (in Java):<p></p>
+							<img src="images2/Classes_and_Objects_6.jpg" width="600" height="340">
+							<br>Learning outcomes:
+							<p>1. Encapsulation is used to hide data and functionality and prevent their changes or use outside classes.</p>
+							<p>2. Attributes can be defined as private, Python, however, is more flexible. there is a common practice that variables with one underscore are assumed as private (&#96;&#96;_var&#96;&#96;), with double underscore convention (&#96;&#96;__var&#96;&#96;) are not accessible directly.</p>
+							<p>3. Access to private variables can be given by getters and setters using property decorators or property functions.<br>
+							</p>
+							<h3><b>Polymorphism</b></h3>
+							<p>Reflections:<br>
+							In object-oriented programming, polymorphism means when different behaviour of a function or method is observed depending on which subclass is used for the task.</p>
+							<p>Learning outcomes:<br>
+							1. Method overriding &ndash; a subclass overrides a method of the superclass and acts differently from the original.</p>
+							<p>2. Method Overloading &ndash; a set of classes have methods with the same name and other methods or a function can use their name and depending on what object is used, different outcomes may be given.</p>
+							<p>3. Operator Overloading &ndash; the same operator may give different results based on what type of variables is passed.</p>
+							<p>4. Magic Methods are a set of special built-in functions in Python to manipulate objects. I have implemented this type of polymorphism in my System Implementation assignment, where I wanted to compare two objects and check if they have the same values.</p>
+							<img src="images2/Classes_and_Objects_7.jpg" width="700" height="160"><p></p>
+							<p>5. Duck Typing – it does not matter what type of object is passing to a method or function, as long as it can properly perform its job.</p>
+							</div>
+						</section>
+					</section>
+
+					<section>
+						<p></p>
+						<h3><b>The exercises that have been done during the course:</b></h3>
+						<p></p>
+						<div class="content">
+						<ul class="actions">
+							<li><a href="https://github.com/grzegorzpikus/grzegorzpikus.github.io/tree/main/files/OOP/Classes%20and%20Objects" class="button" target="_blank">Classes and Objects</a></li>
+						</ul>
+						</div>
+						<div class="content">
+						<ul class="actions">
+							<li><a href="https://github.com/grzegorzpikus/grzegorzpikus.github.io/tree/main/files/OOP/Functions%20and%20Methods" class="button" target="_blank">Function and Methods</a></li>
+						</ul>
+						</div>
+						<div class="content">
+						<ul class="actions">
+							<li><a href="https://github.com/grzegorzpikus/grzegorzpikus.github.io/tree/main/files/OOP/Encapsulation" class="button" target="_blank">Encapsulation</a></li>
+						</ul>
+						</div>
+						<div class="content">
+						<ul class="actions">
+							<li><a href="https://github.com/grzegorzpikus/grzegorzpikus.github.io/tree/main/files/OOP/Inheritance" class="button" target="_blank">Inheritance</a></li>
+						</ul>
+						</div>
+						<div class="content">
+						<ul class="actions">
+							<li><a href="https://github.com/grzegorzpikus/grzegorzpikus.github.io/tree/main/files/OOP/Polymorphism" class="button" target="_blank">Polymorphism</a></li>
+						</ul>
+						</div>
+					</section>
+
+
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

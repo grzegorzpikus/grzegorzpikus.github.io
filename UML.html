@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Grzegorz Pikus e-Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+					<section>
+						<p></p>
+						<ul class="actions">
+							<li><a href="UoE_OOP.html" class="button" type="reset">Object-Oriented Programming</a></li>
+						</ul>
+					</section>
+				<!-- One -->
+					<section id="one" class="wrapper style2 spotlights">
+						<section>
+							<a href="#" class="image"><img src="images/UML.jpg" alt="" data-position="center center" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>Unified Modeling Language - exercises</h2>
+									<p>Description and self evaluation of assignments (Mid-module and System Implementation).</p>
+<!--									<ul class="actions">-->
+<!--										<li><a href="TEST1.html" class="button" target="_blank">Learn more</a></li>-->
+<!--									</ul>-->
+								</div>
+							</div>
+						</section>
+                        <section>
+                            <div class="content">
+							<h3>Class Diagram - Practical Activity (Unit3 & Unit5)</h3>
+							<p>Reflections:</p>
+
+							<p>The exercise was about creating an object model for a supermarket. If it was software for an online supermarket I would definitely stay with Customer Class. However, if it was a regular supermarket, a customer class would not be necessary in my opinion. I improved my class diagram by adding proper relationships, and I realized that not all variables and methods should be public.</p>
+							<img src="images2/Class Diagram_improved.jpg"><p></p>
+							<p>Learning outcomes:</p>
+
+							<p>1) I have gain the ability to read class diagrams and analyze them to implement their structure into code/scripts. Moreover, I am able to do my own system architecture and organize my ideas in class diagrams showing proper relationships and inheritance.</p>
+
+							<p>2) Class diagrams are a very useful graphical representation of system design based on object oriented programming. However, before the class diagram can be made, it is important to properly choose what element of the system should be a class. The most important thing that I have learnt, is: if is it has data and behaviors, it should be a class. However, it does not mean that data without behaviour should not be represented by a class. It can, and this approach can be clearly found in Kotlin, in which Data Classes are commonly used and they are strictly dedicated for data storage:</p>
+
+							<p>data class User(val name: String, val age: Int)</p>
+
+							<p>
+							3) There are three steps of creating a class diagram: a) Identify classes, their attributes and behaviours; b) find relationships between classes; c) Create the structure of the system based on classes and their relationships.</p>
+
+							<p>4) I have learnt a variety of relationships between classes that are implemented in class diagrams:<br>
+							Association (a general relationship between two co-existing classes where they play some role with each other); Dependency (one class depends on another class by using its object as a variable or creating its objects); Aggregation (one class consist of objects another class); Composition (it is a stronger version of aggregation because instances of once class cannot exist without the other). And finally Inheritance (hierarchical relationships where a subclass is a more specialized type of superclass).</p>
+
+							<p>5) Encapsulation is a very important aspect of object-oriented programming. Private variables basically cannot be acceded form outside of a class (getters and setters are needed for that). Protected variables, however, are accessable only for the class and its subclasses. <br>
+							</p>
+							<h3>Working with UML (Seminar 3)</h3>
+							<p>Reflections:<br>
+							<p>Unified Modeling Language is a specialized language that consists a few diagrams. Those diagrams formally describe the structure of the software and its processes. Within the course I have learned three type of diagrams that belong to UML: a class diagram, a sequence diagram and activity diagram. For one of the seminar, our task was to prepare these diagrams based on the described scenario. Below I present my proposal:</p>
+                            <p><img src="images2/UML1.jpg"></p>
+							<p><img src="images2/UML2.jpg"></p>
+							<p><img src="images2/UML3.jpg"></p>
+							<p>At the almost end of the module I think I gained knowledge to improve my diagrams:</p>
+							<p>The Class Diagram:<br>
+							a) Doctor Class should have another attribute &ndash; a list of assigned patients to it. The list should keep no more than 500 Patient objects, because I used a type of aggregation relationship. <br>
+							b) The relationship between Prescription and Appointment is composition. That is why I think the appointment should have another attribute prescription (None from default), and it could be overwrite by a doctor if a prescription is needed. <br>
+							c) Patient Class do not have &ldquo;request appointment&rdquo; and &ldquo;repeat prescription request&rdquo; methods. That is a major bug in my design. And if the Patient class may request for renewing prescription, Patient and Prescription class should be associated.</p>
+							<p>The Activity Diagram:
+							a) Firstly, I reckon the action starts too late form “make an appointment” (a Receptionist). It should start form Patient “request an appointment” provide all necessary data. I improved my activity diagram below:</p>
+							<p>The Activity Diagram:<br>
+							a) Firstly, I reckon the action starts too late from &ldquo;make an appointment&rdquo; (a Receptionist). It should start form Patient &ldquo;request an appointment&rdquo; provide all necessary data. I improved my activity diagram below:</p>
+							<p><img src="images2/UML4.jpg"></p>
+							</div>
+						</section>
+
+
+
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
