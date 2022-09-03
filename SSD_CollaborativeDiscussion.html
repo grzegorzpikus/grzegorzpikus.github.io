@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Grzegorz Pikus e-Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+					<section>
+						<p></p>
+						<ul class="actions">
+							<li><a href="UoE_SSD.html" class="button" type="reset">Secure Software Programming</a></li>
+						</ul>
+					</section>
+				<!-- One -->
+					<section id="one" class="wrapper style2 spotlights">
+						<section>
+							<a href="#" class="image"><img src="images/Forum_discussion.jpg" alt="" data-position="center center" /></a>
+							<div class="content">
+								<div class="inner">
+								<h2>Collaborative Discussions</h2>
+								<p>My posts for collaborative discussions</p>
+								</div>
+							</div>
+						</section>
+
+                        <section>
+                            <div class="content">
+							<h3>Collaborative Discussion 1: UML flowchart.</h3>
+							OWASP (Open Web Application Security Project) is a non-profit organization that monitors the market of internet applications at the security level. The organisation has been established to gather information about attacks on the web, to normalize attack types and to publish information about the most often dangerous activities. One of them is Cryptographic Failures which shift up the position from A03:2017 (called Sensitive Data Exposure) in 2017 to A02-2021 as Cryptographic Failures in 2021. This category is related to failures in cryptography that is often an effect of sensitive data exposure. One example of this type of failure is the week enscription of a website. In this case, an attacker can monitor communication between a user and a server and change the connection from HTTPS to HTTP. It allows the attacker to get information about the user's session cookies and use them to hijack the user's authenticated session. This situation is presented on the chart flow below. General methods to prevent Cryptographic Failures are as followed: a) Keeping websites secure and patching. b) Storing sensitive data only and only if it is needed and essential. c) Using only widely acceptable cryptographic Algorithms. d) Securing the way of encryption of passwords. e) Generating keys offline and not transmitting them over insecure channels. Another important side is prevention attasks by detecting them. Every system should protect itself by early detection of attacks. If the system is under attack it should recover by generating a new key pair, updating the protocol and untrust a node from the system. 83% of cryptography bugs and failures are caused by misusing cryptographic libraries in applications, while only 17% of them are in the cryptographic libraries. Even though there are existing tools to help with this delicate matter, potential scenarios still have to be sought and tested to prevent potential future attacks.</p>
+							<img src="SSD/images/CD1.jpg" alt="" data-position="center center" />
+							<p>References:<br>
+							1. https://owasp.org/www-project-top-ten/ <br>
+							2. https://owasp.org/www-project-top-ten/2017/A3_2017-Sensitive_Data_Exposure <br>
+							3. Piętka K., (2018) [online] Bezpieczeństwo aplikacji internetowych. Available at: https://devpark.pl/pl/ataki-sieciowe-wedlug-owasp-najpopularniejsze-typy/ [Accesed on 22. 06. 2022] <br>
+							4. Lazar, D., Chen, H., Wang, X., Zeldovich, N., (2014) Why does cryptographic software fail? A case study and open problems, Proceedings of the 5th Asia-Pacific Workshop on Systems, Beijing, China. <br>
+							5. https://code-maze.com/owasp-top-10-sensitive-data-exposure/ <br>
+							6. Shankdhar P., (2013) [online] Protect Data by Preventing Insecure Cryptographic Storage. Available at: https://resources.infosecinstitute.com/topic/protect-data-by-preventing-insecure-cryptographic-storage/ [Accesed on 22. 06. 2022] <br>
+							7. Schneier, B. (1998) Cryptographic design vulnerabilities, Computer, Vol. 31 (9): 29-33.</p>
+							<p>The answer for tutor comment:<br>
+							This type of hijacking is session sniffing. It's one of the most basic techniques for session hijacking. The attacker can use a sniffer, for example, Wireshark (which is an analyser that usually helps with troubleshooting of network). Because of that, the attacker can capture the session ID between a user and a server during a traffic network. As soon as the attacker gets the valid ID, can use it for unauthorized access. I learnt that there are three types of sniffing attacks: a) Wireless sniffer - dedicated to capturing data on wireless network b) External sniffer - in this approach both inbound and outbound traffic from an external locality to a web server, are monitored to collect information about the server. c) Internal sniffer - created for extracting information from the internal co-operate network. The attacker makes a machine vulnerable on the internal network and runs the sniffer to capture the data.</p>
+							<p>References:<br>
+							1. https://www.venafi.com/blog/what-session-hijacking<br>
+							2. https://owasp.org/www-community/attacks/Session_hijacking_attack <br>
+							3. B. Prabadevi, N. Jeyanthi (2018) A Review on Various Sniffing Attacks and its Mitigation Techniques, Indonesian Journal of Electrical Engineering and Computer Science, 12, (3): 1117-1125.</p>
+							<h3>Collaborative Discussion 2: Cryptography case study: TrueCrypt.</h3>
+							<p>Even though the cryptanalysis OCAP for TrueCrypt did not find any evidence for serious security issues like a backdoor, they still underlined some problems that might be concerning in the case of using this open source encryption software in a secure way. OCAP for TrueCrypt consists of two parts: The first referees to the TrueCrypt bootloarder and Windows kernel driver, coding standards and performance. The second was about encryption in general. The auditors found eleven vulnerabilities: four medium severity, four low severity and three informational. The main issues with TrueCrypt are as follow:<br>
+							a) The report said that “The bootloader and the Windows kernel driver did not meet expected standards for security code”. <br>
+							b) The software did not meet good programming style, lack of comments and usage of old functions that did not meet security standards.<br>
+							c) The code used old and not supported tools that might have put an operating system on a risk of malicious modification, unknown and unsupported modification.<br>
+							d) The most dangerous issue is probably a weak volume header key derivation algorithm. The authors applied a standard key derivation algorithm PBKDF2, which uses an iteration count that is not big enough to prevent password-guessing attacks.</p>
+							<p>The analysis showed that there are some medium or low-security issues, however, it did not discourage from using TrueCrypt (Ritter 2014). However, in my opinion, they clearly presented issues that needed corrections immediately to keep users’ computers safe. Would I recommend using TrueCrypt to a friend? Of course not. Why? There are two main reasons:<br>
+							1) This’s discontinued and unsupported encryption software, which means it’s unsafe.<br>
+							2) Two principal vulnerabilities have been found. They do not allow for a backdoor, but they allow for malware installation that could result in figuring out description key of the software and other sensitive data (CVE-2015-7358, CVE-2015-7359).</p>
+							<p>Ontology graph for TrueCript<br>
+							<img src="SSD/images/Ontology.jpg" alt="" data-position="center center" /></p>
+							<p>References:<br>
+							1. Ritter, T., (2014) [Online] "iSEC Completes TrueCrypt Audit" available at: https://isecpartners.github.io/news/2014/04/14/iSEC-Completes-Truecrypt-Audit.html [Accessed on 03. 08. 2022]<br>
+							2. Jain, K., (2015) [online] "TrueCrypt Encryption Software Has Two Critical Flaws: It's time to Move On" Available at: https://thehackernews.com/2015/09/truecrypt-encryption-software.html [Accessed on 03. 08. 2022]</p>
+
+							</div>
+						</section>
+
+
+
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Grzegorz Pikus e-Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+					<section>
+						<p></p>
+						<ul class="actions">
+							<li><a href="UoE_SSD.html" class="button" type="reset">Secure Software Programming</a></li>
+						</ul>
+					</section>
+				<!-- One -->
+					<section id="one" class="wrapper style2 spotlights">
+						<section>
+							<a href="#" class="image"><img src="SSD/images/codio.jpg" alt="" data-position="center center" /></a>
+							<div class="content">
+								<div class="inner">
+								<h2>Codio exercises</h2>
+								<p>The results of my codio exercises.</p>
+								</div>
+							</div>
+						</section>
+
+                        <section>
+                            <div class="content">
+							<h3>Buffering Overflow in C</h3>
+								<p>The compiler generates the stack smashing detected error in responce to its defence mechanism against buffer overflows. A buffer overvlof occurs when the user input exceeds the buffer capacity. As we can see in the code, the stack smashing detected error happens when a user provide more than 8 characters.</p>
+								<p><img src="SSD/images/BOC.jpg" alt="" data-position="center center" /></p>
+								<p>8 Characters
+								<img src="SSD/images/BOC_8_Characters.jpg" alt="" data-position="center center" /></p>
+								<p>12 Characters
+								<img src="SSD/images/BOC_12_Characters.jpg" alt="" data-position="center center" /></p>
+							<h3>Buffering Overflow in Python</h3>
+								<p>The first run of Overflow.py
+								<img src="SSD/images/BOP1.jpg" alt="" data-position="center center" /></p>
+								<p>Pylist is a python library that helps to debug errors in the code. It can:<br>
+								a) list errors after executing python code<br>
+								b) support coding standards and helps to avoid potential errors and bugs.<br>
+								c) suggest how the code can be improved / updated<br>
+								d) offers details about code's complexity</p>
+								<p>In the exercise I got several errors:<br>
+								a) Overflow.py:4:0: C0303: Trailing whitespace (trailing-whitespace) - there is whitespace between the end of a line and the newline.<br>
+								b) Overflow.py:5:0: C0304: Final newline missing (missing-final-newline) - when the last line in a file is missing a newline.<br>
+								c) Overflow.py:1:0: C0103: Module name "Overflow" doesn't conform to snake_case naming style (invalid-name) - is used when the name doesn’t conform to naming rules associated to its type (constant, variable, class…).<br>
+								d) Overflow.py:1:0: C0114: Missing module docstring (missing-module-docstring) - it is used when a module has no docstring.</p>
+								<p>The second run of Overflow.py
+								<img src="SSD/images/BOP2.jpg" alt="" data-position="center center" /></p>
+								<p>Solutions:<br>
+								in the file Overflow.py:<br>
+								1) line 4 there are 4 spaces - they should be removed.<br>
+								2) there should be one additional empty line 6.<br>
+								3) the name of the module should be lowercase ''overflow.py''<br>
+								4) a docstring should be added.</p>
+								<p>After adding corrections.
+								<img src="SSD/images/BOP3.jpg" alt="" data-position="center center" /></p>
+							<h3>Testing with Python</h3>
+								<p>Q1.1: What happens when the code is run?<br>
+								I was getting IndentationError: expected an indented block.</p>
+								<p>Q1.2:Can you modify this code for a more favourable outcome?<br>
+								The file styleLine.py had incorrect tabs.<br>
+								It was:<br>
+								<img src="SSD/images/TwP1.jpg" alt="" data-position="center center" /><br>
+								My corrections:<br>
+								<img src="SSD/images/TwP2.jpg" alt="" data-position="center center" /></p>
+								<p>Q2: Run pylint on pylintTest.py. Review each of the code errors returned. Can you correct each of the errors identified by pylint? Before correcting the code errors, save the pylintTest.py file with a new name (it will be needed again in the next question).<br>
+								My corrections:<br>
+								Error 1: Missing parentheses in call to 'print'. Did you mean print(encoded)? I added parentheses for function print.<br>
+								Error 2: NameError: name 'raw_input' is not defined. I deleted “raw_” from each input.</p>
+								<p>Q3:<br>
+								metricTest.py:2:1: E265 block comment should start with '# '<br>
+								it was: “#CODE SOURCE: SOFTWARE ARCHITECTURE WITH PYTHON “<br>
+								my correction: “# CODE SOURCE: SOFTWARE ARCHITECTURE WITH PYTHON “</p>
+								<p>metricTest.py:2:48: W291 trailing whitespace<br>
+								it was: “# CODE SOURCE: SOFTWARE ARCHITECTURE WITH PYTHON “<br>
+								my correction: “# CODE SOURCE: SOFTWARE ARCHITECTURE WITH PYTHON“</p>
+								<p>metricTest.py:15:1: E302 expected 2 blank lines, found 1.<br>
+								it was:<br>
+								<img src="SSD/images/TwP3.jpg" alt="" data-position="center center" /><br>
+								my corrections:<br>
+								<img src="SSD/images/TwP4.jpg" alt="" data-position="center center" /></p>
+								<p>In many places there was an error: E111 indentation is not a multiple of 4<br>
+								my solution: I went through all the file correcting  indentations.</p>
+								<p>There was a few errors: E302 expected 2 blank lines, found 1<br>
+								my solution: I had to add one additional line between either two functions or two classes or a function and a class.</p>
+								<p>metricTest.py:22:5: E128 continuation line under-indented for visual indent<br>
+								it was:<br>
+								<img src="SSD/images/TwP5.jpg" alt="" data-position="center center" /><br>
+								my correction:<br>
+								<img src="SSD/images/TwP6.jpg" alt="" data-position="center center" /><br>
+								This error repeated in a few lines in the cod and I correct them all.</p>
+								<p>metricTest.py:27:5: E303 too many blank lines (2)<br>
+								it was:<br>
+								<img src="SSD/images/TwP7.jpg" alt="" data-position="center center" /><br>
+								my correction:<br>
+								<img src="SSD/images/TwP8.jpg" alt="" data-position="center center" /><br>
+								This type of mistake repeated a few times, and I corrected them all.</p>
+								<p>metricTest.py:26:24: E999 SyntaxError: invalid syntax<br>
+								it was:<br>
+								<img src="SSD/images/TwP9.jpg" alt="" data-position="center center" /><br>
+								my correction:<br>
+								<img src="SSD/images/TwP10.jpg" alt="" data-position="center center" /></p>
+								<p>metricTest.py:29:9: E225 missing whitespace around operator<br>
+								it was: “if d<=30:”<br>
+								my correction: “if d <= 30:”</p>
+								<p>metricTest.py:36:80: E501 line too long (84 > 79 characters)<br>
+								it was: “# If d>45 there are a combination of options Writing Modifiable and Readable Code” - everything in one line (more than 80 char in one line)<br>
+								my correction:<br>
+								“# If d>45 there are a combination of optionsWriting<br>
+								# Modifiable and Readable Code”<br>
+								I divided the comment into two lines (each below 80 char).</p>
+								<p>metricTest.py:42:31: E231 missing whitespace after ','<br>
+								it was: “return ('bus:335E','bus:connector')”<br>
+								my correction: “return ('bus:335E', 'bus:connector')”<br>
+								This error repeated in several places in the code, and I corrected them all.</p>
+								<p>metricTest.py:79:13: E701 multiple statements on one line (colon)<br>
+								it was:<br>
+								<img src="SSD/images/TwP11.jpg" alt="" data-position="center center" /><br>
+								my correction:<br>
+								<img src="SSD/images/TwP12.jpg" alt="" data-position="center center" /></p>
+								<p>metricTest.py:87:30: W292 no newline at end of file<br>
+								it was: no new line at the end of the file.<br>
+								my correction: I added a new line at the end of the file.<br>
+								This error repeated in several places in the code, and I corrected them all.</p>
+								<p>after all my corrections:<br>
+								<img src="SSD/images/TwP13.jpg" alt="" data-position="center center" /></p>
+								<p>Q4.1: Run mccabe on sums.py. What is the result?<br>
+								The result is:<br>
+								("4:0: 'test_sum'", 1)<br>
+								('If 7', 2)</p>
+								<p>Q4.2: Run mccabe on sums2.py. What is the result?<br>
+								The result is:<br>
+								("7:0: 'test_sum_tuple'", 1)<br>
+								("4:0: 'test_sum'", 1)<br>
+								('If 10', 2)</p>
+								<p>What are the contributors to the cyclomatic complexity in each piece of code?<br>
+								For the sums.py is 1 and for the sums2.py is 2.</p>
+
+
+
+
+
+
+
+
+							</div>
+						</section>
+
+
+
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
